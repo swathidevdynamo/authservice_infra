@@ -1,0 +1,36 @@
+{
+  "name": "auth-configurator",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "tsx src/app.ts",
+    "apply": "tsx src/scripts/provision.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.hrg.systems/control_software/neura_interfaces/auth-configurator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.1",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@keycloak/keycloak-admin-client": "^26.3.3",
+    "axios": "^1.11.0",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "winston": "^3.13.0"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "realm": "demo-realm",
+  "clients": [
+    {
+      "client_id": "demo-client",
+      "enabled": true,
+      "publicClient": false,
+      "protocol": "openid-connect",
+      "redirectUris": ["*"],
+      "clientAuthenticatorType": "client-secret",
+      "defaultRoles": [],
+      "standardFlowEnabled": true,
+      "implicitFlowEnabled": false,
+      "directAccessGrantsEnabled": true,
+      "authorizationServicesEnabled": true,
+      "roles": [
+        {
+          "name": "Observer",
+          "description": "Observer role for demo-client"
+        },
+        {
+          "name": "Operator",
+          "description": "Operator role for demo-client"
+        },
+        {
+          "name": "Programmer",
+          "description": "Programmer role for demo-client"
+        },
+        {
+          "name": "Safety Commissioner",
+          "description": "Safety Commissioner role for demo-client"
+        },
+        {
+          "name": "Administrator",
+          "description": "Admin role for demo-client"
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "name": "Observer",
+      "path": "/Observer",
+      "clientRoleMappings": [
+        {
+          "clientId": "demo-client",
+          "roles": ["Observer"]
+        }
+      ]
+    },
+    {
+      "name": "Operator",
+      "path": "/Operator",
+      "clientRoleMappings": [
+        {
+          "clientId": "demo-client",
+          "roles": ["Operator"]
+        }
+      ]
+    },
+    {
+      "name": "Safety Commissioner",
+      "path": "/Safety Commissioner",
+      "clientRoleMappings": [
+        {
+          "clientId": "demo-client",
+          "roles": ["Safety Commissioner"]
+        }
+      ]
+    },
+    {
+      "name": "Programmer",
+      "path": "/Programmer",
+      "clientRoleMappings": [
+        {
+          "clientId": "demo-client",
+          "roles": ["Programmer"]
+        }
+      ]
+    },
+    {
+      "name": "Administrator",
+      "path": "/Administrator",
+      "clientRoleMappings": [
+        {
+          "clientId": "demo-client",
+          "roles": ["Administrator"]
+        }
+      ]
+    }
+  ]
+}

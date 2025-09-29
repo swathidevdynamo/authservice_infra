@@ -1,0 +1,38 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: keycloak_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: keycloak
+      POSTGRES_USER: keycloak
+      POSTGRES_PASSWORD: keycloak
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U keycloak -d keycloak || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:latest
+    container_name: keycloak
+    restart: unless-stopped
+    command: start-dev --http-port=8090
+    environment:
+      AUTH_DB: postgres
+      AUTH_DB_URL: jdbc:postgresql://postgres:5432/keycloak
+      AUTH_DB_USERNAME: keycloak
+      AUTH_DB_PASSWORD: keycloak
+      AUTH_HOSTNAME: localhost
+      KEYCLOAK_ADMIN: kcneuraadmin
+      KEYCLOAK_ADMIN_PASSWORD: kcneuraadmin
+    ports:
+      - "8088:8090"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+volumes:
+  postgres_data:

@@ -1,0 +1,1083 @@
+{
+  "allowRemoteResourceManagement": true,
+  "policyEnforcementMode": "ENFORCING",
+  "resources": [
+    {
+      "name": "/grpc_interface.Robot/PowerOn",
+      "ownerManagedAccess": false,
+      "displayName": "PowerOn",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/PowerOff",
+      "ownerManagedAccess": false,
+      "displayName": "PowerOff",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/MoveJoint",
+      "ownerManagedAccess": false,
+      "displayName": "MoveJoint",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/SwitchToAutomaticMode",
+      "ownerManagedAccess": false,
+      "displayName": "SwitchToAutomaticMode",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/SwitchToTeachMode",
+      "ownerManagedAccess": false,
+      "displayName": "SwitchToTeachMode",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/TcpWrench",
+      "ownerManagedAccess": false,
+      "displayName": "TcpWrench",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/TcpForce",
+      "ownerManagedAccess": false,
+      "displayName": "TcpForce",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/TcpTorque",
+      "ownerManagedAccess": false,
+      "displayName": "TcpTorque",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/TcpPose",
+      "ownerManagedAccess": false,
+      "displayName": "TcpPose",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/FlangePose",
+      "ownerManagedAccess": false,
+      "displayName": "FlangePose",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/TcpPoseQuaternion",
+      "ownerManagedAccess": false,
+      "displayName": "TcpPoseQuaternion",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/FlangePoseQuaternion",
+      "ownerManagedAccess": false,
+      "displayName": "FlangePoseQuaternion",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/TcpSpeed",
+      "ownerManagedAccess": false,
+      "displayName": "TcpSpeed",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/MotionStatus",
+      "ownerManagedAccess": false,
+      "displayName": "MotionStatus",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/ProgramStatus",
+      "ownerManagedAccess": false,
+      "displayName": "ProgramStatus",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/CurrentJointAngles",
+      "ownerManagedAccess": false,
+      "displayName": "CurrentJointAngles",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/CurrentJointTorques",
+      "ownerManagedAccess": false,
+      "displayName": "CurrentJointTorques",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/CurrentJointVelocities",
+      "ownerManagedAccess": false,
+      "displayName": "CurrentJointVelocities",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/CurrentLoadSideEncoderValues",
+      "ownerManagedAccess": false,
+      "displayName": "CurrentLoadSideEncoderValues",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/CurrentMotorSideEncoderValues",
+      "ownerManagedAccess": false,
+      "displayName": "CurrentMotorSideEncoderValues",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/MoveCircular",
+      "ownerManagedAccess": false,
+      "displayName": "MoveCircular",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/MoveLinear",
+      "ownerManagedAccess": false,
+      "displayName": "MoveLinear",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/Grasp",
+      "ownerManagedAccess": false,
+      "displayName": "Grasp",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/Release",
+      "ownerManagedAccess": false,
+      "displayName": "Release",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/ExecuteProgram",
+      "ownerManagedAccess": false,
+      "displayName": "ExecuteProgram",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/ProgramNames",
+      "ownerManagedAccess": false,
+      "displayName": "ProgramNames",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/GetAnalogIO",
+      "ownerManagedAccess": false,
+      "displayName": "GetAnalogIO",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/GetDigitalIO",
+      "ownerManagedAccess": false,
+      "displayName": "GetDigitalIO",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "read"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/InitProgram",
+      "ownerManagedAccess": false,
+      "displayName": "InitProgram",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/SetTool",
+      "ownerManagedAccess": false,
+      "displayName": "SetTool",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/GetRobotProperties",
+      "ownerManagedAccess": false,
+      "displayName": "GetRobotProperties",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },  
+    {
+      "name": "/grpc_interface.Robot/Unpause",
+      "ownerManagedAccess": false,
+      "displayName": "Unpause",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/Pause",
+      "ownerManagedAccess": false,
+      "displayName": "Pause",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/Stop",
+      "ownerManagedAccess": false,
+      "displayName": "Stop",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    },
+    {
+      "name": "/grpc_interface.Robot/ResetCollision",
+      "ownerManagedAccess": false,
+      "displayName": "ResetCollision",
+      "attributes": {},
+      "uris": [],
+      "icon_uri": "",
+      "scopes": [{"name": "write"}]
+    }
+  ],
+  "policies": [
+    {
+      "name": "poweron-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Safety Commissioner",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "poweroff-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Safety Commissioner",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "switchtoautomaticmode-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Safety Commissioner",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "switchtoteachmode-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Safety Commissioner",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "movelinear-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Operator",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "movejoint-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Operator",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "movecircular-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Operator",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "getanalogio-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Safety Commissioner",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "getdigitalio-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Safety Commissioner",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "getrobotproperties-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Safety Commissioner",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "stop-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Safety Commissioner",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "reset-collision-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Safety Commissioner",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "motionstatus-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "programstatus-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "tcpwrench-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "tcpforce-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "tcptorque-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "tcppose-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "flangepose-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "tcpposequaternion-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "flangeposequaternion-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "tcpspeed-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "currentjointangles-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "currentjointtorques-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "currentjointvelocities-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "currentloadsideencodervalues-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "currentmotorsideencodervalues-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "programnames-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Observer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "grasp-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Programmer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "release-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Programmer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "settool-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Programmer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "execute-program-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Programmer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "init-program-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Programmer",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "pause-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Operator",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    },
+    {
+      "name": "unpause-role-policy",
+      "type": "role",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "roles": [
+        {
+          "name": "Operator",
+          "containerId": "demo-client",
+          "required": false
+        }
+      ],
+      "fetchRoles": false
+    }
+  ],
+  "permissions": [
+    {
+      "name": "grasp-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/Grasp"
+      ],
+      "policies": [
+        "grasp-role-policy"
+      ]
+    },
+    {
+      "name": "release-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/Release"
+      ],
+      "policies": [
+        "release-role-policy"
+      ]
+    },
+    {
+      "name": "settool-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/SetTool"
+      ],
+      "policies": [
+        "settool-role-policy"
+      ]
+    },
+    {
+      "name": "execute-program-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/ExecuteProgram"
+      ],
+      "policies": [
+        "execute-program-role-policy"
+      ]
+    },
+    {
+      "name": "init-program-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/InitProgram"
+      ],
+      "policies": [
+        "init-program-role-policy"
+      ]
+    },
+    {
+      "name": "poweron-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/PowerOn"
+      ],
+      "policies": [
+        "poweron-role-policy"
+      ]
+    },
+    {
+      "name": "poweroff-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/PowerOff"
+      ],
+      "policies": [
+        "poweroff-role-policy"
+      ]
+    },
+    {
+      "name": "switchtoautomaticmode-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/SwitchToAutomaticMode"
+      ],
+      "policies": [
+        "switchtoautomaticmode-role-policy"
+      ]
+    },
+    {
+      "name": "switchtoteachmode-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/SwitchToTeachMode"
+      ],
+      "policies": [
+        "switchtoteachmode-role-policy"
+      ]
+    },
+    {
+      "name": "movejoint-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/MoveJoint"
+      ],
+      "policies": [
+        "movejoint-role-policy"
+      ]
+    },
+    {
+      "name": "movelinear-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/MoveLinear"
+      ],
+      "policies": [
+        "movelinear-role-policy"
+      ]
+    },
+    {
+      "name": "movecircular-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/MoveCircular"
+      ],
+      "policies": [
+        "movecircular-role-policy"
+      ]
+    },
+    {
+      "name": "getanalogio-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/GetAnalogIO"
+      ],
+      "policies": [
+        "getanalogio-role-policy"
+      ]
+    },
+    {
+      "name": "getdigitalio-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/GetDigitalIO"
+      ],
+      "policies": [
+        "getdigitalio-role-policy"
+      ]
+    },
+    {
+      "name": "getrobotproperties-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/GetRobotProperties"
+      ],
+      "policies": [
+        "getrobotproperties-role-policy"
+      ]
+    },
+    {
+      "name": "stop-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/Stop"
+      ],
+      "policies": [
+        "stop-role-policy"
+      ]
+    },
+    {
+      "name": "reset-collision-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/ResetCollision"
+      ],
+      "policies": [
+        "reset-collision-role-policy"
+      ]
+    },
+    {
+      "name": "motionstatus-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/MotionStatus"
+      ],
+      "policies": [
+        "motionstatus-role-policy"
+      ]
+    },
+    {
+      "name": "programstatus-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/ProgramStatus"
+      ],
+      "policies": [
+        "programstatus-role-policy"
+      ]
+    },
+    {
+      "name": "tcpwrench-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/TcpWrench"
+      ],
+      "policies": [
+        "tcpwrench-role-policy"
+      ]
+    },
+    {
+      "name": "pause-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/Pause"
+      ],
+      "policies": [
+        "pause-role-policy"
+      ]
+    },
+    {
+      "name": "unpause-permission",
+      "type": "resource",
+      "logic": "POSITIVE",
+      "decisionStrategy": "UNANIMOUS",
+      "resources": [
+        "/grpc_interface.Robot/Unpause"
+      ],
+      "policies": [
+        "unpause-role-policy"
+      ]
+    }
+  ],
+  "decisionStrategy": "UNANIMOUS"
+}
+
+
+
