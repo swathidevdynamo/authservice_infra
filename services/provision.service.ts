@@ -4,7 +4,7 @@ import { GroupService } from "./group.service.js";
 import { RoleService } from "./role.service.js";
 import { ServiceAccountService } from "./service-account.service.js";
 import { ResourceService } from "./resource.service.js";
-import { keycloakConfig } from "../config/keycloak.config.js";
+import { IDPConfig } from "../config/identityprovider.config.js";
 import logger from "../utils/logger.js";
 
 export class ProvisionService {
@@ -33,10 +33,10 @@ export class ProvisionService {
     await this.roleService.ensureRoles(roles);
     await this.resourceService.createResource(
       realmName,
-      keycloakConfig.resources ?? [],
-      keycloakConfig.myClient ?? '',
-      keycloakConfig.permissions ?? [],
-      keycloakConfig.policies ?? []
+      IDPConfig.resources ?? [],
+      IDPConfig.myClient ?? '',
+      IDPConfig.permissions ?? [],
+      IDPConfig.policies ?? []
     );
 
     for (const [group, assignedRoles] of Object.entries(groupRoleMap)) {
@@ -47,6 +47,6 @@ export class ProvisionService {
 
     await this.serviceAccountService.assignRolesToServiceAccount(clientId, serviceAccountRoles);
 
-    logger.info("🎉 Keycloak provisioning completed!");
+    logger.debug("🎉 Identity Provider Initialization completed!");
   }
 }

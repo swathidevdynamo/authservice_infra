@@ -26,10 +26,10 @@ services:
       AUTH_DB_USERNAME: keycloak
       AUTH_DB_PASSWORD: keycloak
       AUTH_HOSTNAME: localhost
-      KEYCLOAK_ADMIN: kcneuraadmin
-      KEYCLOAK_ADMIN_PASSWORD: kcneuraadmin
+      KEYCLOAK_ADMIN: ${KEYCLOAK_ADMIN}
+      KEYCLOAK_ADMIN_PASSWORD: ${KEYCLOAK_ADMIN_PASSWORD}
     ports:
-      - "8088:8090"
+      - "8089:8090"
     depends_on:
       postgres:
         condition: service_healthy

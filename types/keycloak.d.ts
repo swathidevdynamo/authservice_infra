@@ -20,7 +20,7 @@ export interface Keycloak {
   groups: {
     find(): Promise<Array<{ id?: string; name?: string; [key: string]: any }>>;
     create(data: { name: string }): Promise<any>;
-    addRealmRoleMappings(params: {
+    addClientRoleMappings(params: {
       id: string;
       roles: Array<{ id: string; name: string }>;
     }): Promise<any>;
@@ -31,7 +31,7 @@ export interface Keycloak {
     findOneByName(params: { name: string }): Promise<{ id?: string; name?: string; [key: string]: any } | undefined>;
   };
   users: {
-    addRealmRoleMappings(params: {
+    addClientRoleMappings(params: {
       id: string;
       roles: Array<{ id: string; name: string }>;
     }): Promise<any>;

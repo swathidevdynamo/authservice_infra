@@ -326,7 +326,7 @@
       "decisionStrategy": "UNANIMOUS",
       "roles": [
         {
-          "name": "Safety Commissioner",
+          "name": "Safety-Commissioner",
           "containerId": "demo-client",
           "required": false
         }
@@ -340,7 +340,7 @@
       "decisionStrategy": "UNANIMOUS",
       "roles": [
         {
-          "name": "Safety Commissioner",
+          "name": "Safety-Commissioner",
           "containerId": "demo-client",
           "required": false
         }
@@ -354,7 +354,7 @@
       "decisionStrategy": "UNANIMOUS",
       "roles": [
         {
-          "name": "Safety Commissioner",
+          "name": "Safety-Commissioner",
           "containerId": "demo-client",
           "required": false
         }
@@ -368,7 +368,7 @@
       "decisionStrategy": "UNANIMOUS",
       "roles": [
         {
-          "name": "Safety Commissioner",
+          "name": "Safety-Commissioner",
           "containerId": "demo-client",
           "required": false
         }
@@ -424,7 +424,7 @@
       "decisionStrategy": "UNANIMOUS",
       "roles": [
         {
-          "name": "Safety Commissioner",
+          "name": "Safety-Commissioner",
           "containerId": "demo-client",
           "required": false
         }
@@ -438,7 +438,7 @@
       "decisionStrategy": "UNANIMOUS",
       "roles": [
         {
-          "name": "Safety Commissioner",
+          "name": "Safety-Commissioner",
           "containerId": "demo-client",
           "required": false
         }
@@ -452,7 +452,7 @@
       "decisionStrategy": "UNANIMOUS",
       "roles": [
         {
-          "name": "Safety Commissioner",
+          "name": "Safety-Commissioner",
           "containerId": "demo-client",
           "required": false
         }
@@ -466,7 +466,7 @@
       "decisionStrategy": "UNANIMOUS",
       "roles": [
         {
-          "name": "Safety Commissioner",
+          "name": "Safety-Commissioner",
           "containerId": "demo-client",
           "required": false
         }
@@ -480,7 +480,7 @@
       "decisionStrategy": "UNANIMOUS",
       "roles": [
         {
-          "name": "Safety Commissioner",
+          "name": "Safety-Commissioner",
           "containerId": "demo-client",
           "required": false
         }

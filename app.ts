@@ -9,16 +9,16 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (_req, res) => {
-    res.send("Keycloak Provisioning Service is running");
+    res.send("Identity Provider Initialization Service is running");
 })
 
 const PORT = process.env.PORT || 5000; 
 app.listen(PORT, async () => {
     try {
         await provision();
-        logger.info(`Provisioning completed successfully. Service running on port ${PORT}`);
+        logger.info(`Initialization completed successfully. Service running on port ${PORT}`);
     } catch (error) {
-        logger.error('Provisioning failed:', error);
+        logger.error('Initialization failed:', error);
         process.exit(1);
     }
 });

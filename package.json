@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "start": "node dist/app.js",
-    "dev": "tsx src/app.ts",
-    "apply": "tsx src/scripts/provision.ts"
+    "dev": "tsx app.ts",
+    "apply": "tsx /scripts/provision.ts"
   },
   "repository": {
     "type": "git",

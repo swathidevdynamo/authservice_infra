@@ -27,7 +27,7 @@
           "description": "Programmer role for demo-client"
         },
         {
-          "name": "Safety Commissioner",
+          "name": "Safety-Commissioner",
           "description": "Safety Commissioner role for demo-client"
         },
         {
@@ -60,11 +60,11 @@
     },
     {
       "name": "Safety Commissioner",
-      "path": "/Safety Commissioner",
+      "path": "/Safety-Commissioner",
       "clientRoleMappings": [
         {
           "clientId": "demo-client",
-          "roles": ["Safety Commissioner"]
+          "roles": ["Safety-Commissioner"]
         }
       ]
     },

@@ -1,9 +1,9 @@
-import type KcAdminClient from '@keycloak/keycloak-admin-client';
+import type IdentityProviderAdminClient from '@keycloak/keycloak-admin-client';
 import logger from '../utils/logger.js';
 
 export class ResourceService {
 
-    constructor(private kc: KcAdminClient) {}
+    constructor(private idpAdminClient: IdentityProviderAdminClient) {}
 
     /**
      * Creates resources, then creates policies and permissions only after all resources are created successfully.
@@ -20,16 +20,16 @@ export class ResourceService {
         permissions: any[],
         policies: any[]
     ) {
-        this.kc.setConfig({ realmName: realm });
+        this.idpAdminClient.setConfig({ realmName: realm });
 
-        const existingClients = await this.kc.clients.find();
-        const client = existingClients.find((c: any) => c.clientId === clientId);
+        const existingClients = await this.idpAdminClient.clients.find();
+        const client = existingClients.find((c: { clientId: string; }) => c.clientId === clientId);
         if (!client) throw new Error(`Client ${clientId} not found`);
         
         // 1. Create all resources first
         for (const res of resources) {
             try {
-                await this.kc.clients.createResource(
+                await this.idpAdminClient.clients.createResource(
                     { id: client.id ?? '' },
                     {
                         name: res.name,
@@ -41,12 +41,12 @@ export class ResourceService {
                         scopes: res.scopes,
                     }
                 );
-                logger.info(`Resource '${res.name}' created successfully`);
+                logger.debug(`Resource '${res.name}' created successfully`);
             } catch (error: any) {
                 const status = error?.response?.status;
                 const errCode = error?.responseData?.error;
                 if (status === 409 || errCode === 'conflict') {
-                    logger.info(`Resource '${res.name}' already exists. Skipping.`);
+                    logger.debug(`Resource '${res.name}' already exists. Skipping.`);
                     continue;
                 }
                 throw error;
@@ -54,7 +54,7 @@ export class ResourceService {
         }
 
         // Prepare client roles lookup for policy resolution
-        const clientRoles = await this.kc.clients.listRoles({ id: client.id! });
+        const clientRoles = await this.idpAdminClient.clients.listRoles({ id: client.id! });
 
         // 2. After all resources are created, create policies (if any)
         if (policies && policies.length > 0) {
@@ -70,7 +70,7 @@ export class ResourceService {
                     if (pol.type === 'role') {
                         const resolvedRoles = (pol.roles ?? []).map((r: any) => {
                             // Resolve by name against client roles
-                            const found = clientRoles.find(cr => cr.name === r.name);
+                            const found = clientRoles.find((cr: { name: string; }) => cr.name === r.name);
                             if (!found) {
                                 throw new Error(`Policy '${pol.name}' references unknown role '${r.name}'`);
                             }
@@ -79,16 +79,16 @@ export class ResourceService {
                         payload.roles = resolvedRoles;
                     }
 
-                    await this.kc.clients.createPolicy(
+                    await this.idpAdminClient.clients.createPolicy(
                         { id: client.id ?? '', type: pol.type },
                         payload
                     );
-                    logger.info(`Policy '${pol.name}' created successfully`);
+                    logger.debug(`Policy '${pol.name}' created successfully`);
                 } catch (error: any) {
                     const status = error?.response?.status;
                     const errCode = error?.responseData?.error;
                     if (status === 409 || errCode === 'conflict') {
-                        logger.info(`Policy '${pol.name}' already exists. Skipping.`);
+                        logger.debug(`Policy '${pol.name}' already exists. Skipping.`);
                         continue;
                     }
                     throw error;
@@ -100,7 +100,7 @@ export class ResourceService {
         if (permissions && permissions.length > 0) {
             for (const perm of permissions) {
                 try {
-                    await this.kc.clients.createPermission(
+                    await this.idpAdminClient.clients.createPermission(
                         { id: client.id ?? '', type: perm.type },
                         {
                             name: perm.name,
@@ -112,12 +112,12 @@ export class ResourceService {
                             description: perm.description,
                         }
                     );
-                    logger.info(`Permission '${perm.name}' created successfully`);
+                    logger.debug(`Permission '${perm.name}' created successfully`);
                 } catch (error: any) {
                     const status = error?.response?.status;
                     const errCode = error?.responseData?.error;
                     if (status === 409 || errCode === 'conflict') {
-                        logger.info(`Permission '${perm.name}' already exists. Skipping.`);
+                        logger.debug(`Permission '${perm.name}' already exists. Skipping.`);
                         continue;
                     }
                     throw error;
