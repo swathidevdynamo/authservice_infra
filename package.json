@@ -11,8 +11,7 @@
     "apply": "tsx /scripts/provision.ts"
   },
   "repository": {
-    "type": "git",
-    "url": "https://gitlab.hrg.systems/control_software/neura_interfaces/auth-configurator.git"
+    "type": "git"
   },
   "keywords": [],
   "author": "",
